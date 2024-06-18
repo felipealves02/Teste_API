@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-06-02T20:58:30.040994" rpa="false" schemaversion="5">
+<suite id="s1" name="Api Test Usuarios" source="C:\CursoUdemy\RobotFramework\ApiTesting\tests\api_test_usuarios.robot">
+<test id="s1-t1" name="Cenário 01: Cadastrar um novo usuario com sucesso na ServeRest" line="8">
+<kw name="Criar um usuario novo" owner="api_test_usuario">
+<kw name="Generate Random String" owner="String">
+<msg time="2024-06-02T20:58:30.339330" level="INFO">${palavra_aleatoria} = hpwh</msg>
+<var>${palavra_aleatoria}</var>
+<arg>length=4</arg>
+<arg>chars=[LETTERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-06-02T20:58:30.338331" elapsed="0.000999"/>
+</kw>
+<kw name="Convert To Lower Case" owner="String">
+<msg time="2024-06-02T20:58:30.339330" level="INFO">${palavra_aleatoria} = hpwh</msg>
+<var>${palavra_aleatoria}</var>
+<arg>${palavra_aleatoria}</arg>
+<doc>Converts string to lower case.</doc>
+<status status="PASS" start="2024-06-02T20:58:30.339330" elapsed="0.000000"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2024-06-02T20:58:30.340326" level="INFO">${EMAIL_TESTE} = hpwh@gmail.com</msg>
+<arg>${EMAIL_TESTE}</arg>
+<arg>${palavra_aleatoria}@gmail.com</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2024-06-02T20:58:30.339330" elapsed="0.000996"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-06-02T20:58:30.340326" level="INFO">hpwh@gmail.com</msg>
+<arg>${EMAIL_TESTE}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-06-02T20:58:30.340326" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-06-02T20:58:30.338331" elapsed="0.001995"/>
+</kw>
+<status status="PASS" start="2024-06-02T20:58:30.338331" elapsed="0.001995"/>
+</test>
+<status status="PASS" start="2024-06-02T20:58:30.041986" elapsed="0.299342"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Api Test Usuarios">Api Test Usuarios</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
